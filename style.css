@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #005eff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    opacity: 0.7;
+}
+
+section{
+    padding: 60px 0;
+}
+
+header{
+    width: 100%;
+    background-color: #fff;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 15px;
+}
+
+.logo img{
+    height:60px;
+    display:block;
+
+}
+
+.theme-list{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.theme-list li{
+    margin: 0px;
+    list-style: none;
+}
+
+.theme-list li:hover{
+    opacity: 0.6;
+}
+
+.visual{
+    width: 100%;
+    height: 840px;
+    background-image: url("img/visual.jpg");
+    background-size: cover;
+    background-position: center;
+    color:#fff;
+    padding: 120px 0;
+}
+
+.visual h1{
+    font-size: 45px;
+}
+
+.about-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-list li{
+    list-style: none;
+    width: calc(50% - 30px);
+    margin: 15px;
+    padding: 20px;
+}
+
+.main{
+    background-image: url("img/haikei.jpg");
+    background-size: cover;
+}
+
+.service{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service li{
+    list-style: none;
+    width: calc(33.333% - 30px);
+    margin: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.service img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.about-list img{
+    height: 270px;    
+}
+
+.voice1,
+.voice2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.voice2{
+    flex-direction: row-reverse;
+}
+
+.item1,
+.item2{
+    width: 500px;
+}
+
+.item1 img,
+.item2 img{
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+footer{
+    padding: 15px;
+    text-align: center;
+    background-image: url("img/haikei2.jpg");
+    background-size: cover;
+}
+
+.sub-main{
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.toiawase-list{
+    list-style: none;
+}
+
+@media(max-width: 768px)  {
+    .container{
+        padding: o 15px;
+    }
+    
+    header{
+        flex-direction: column;
+    }
+
+    .logo{
+        width: 100%;
+    }
+    
+    .service li{
+        width: 100%;
+    }
+    .about-list{
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    .about-list li{
+        width: 100%;
+    }
+
+    .voice1,
+    .voice2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item1,
+    .item2{
+        width: 100%;  
+    }
+
+    section{
+        padding: 40px 0;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+    
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+}
