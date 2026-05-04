@@ -205,6 +205,25 @@ p{
     margin-bottom: 15px;
 }
 
+.portfolio-info {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 40px 20px;
+  border-top: 1px solid #ddd;
+}
+
+.portfolio-info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.portfolio-info p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
 footer{
     padding: 15px;
     text-align: center;
