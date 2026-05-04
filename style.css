@@ -13,7 +13,7 @@
 .btn{
     display: inline-block;
     padding: 10px 40px;
-    background-color: #005eff;
+    background-color: #4089c4;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -24,22 +24,35 @@
 }
 
 section{
-    padding: 60px 0;
+    padding: 80px 5%;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 32px;
+}
+
+p{
+    line-height: 1.8;
 }
 
 header{
     width: 100%;
+    height: 70px;
     background-color: #fff;
     display:flex;
+    position: fixed;
     justify-content: space-between;
     align-items:center;
-    padding: 15px;
+    padding: 20px 5%;
 }
 
-.logo img{
-    height:60px;
-    display:block;
-
+.logo a{
+    font-size: 25px;
 }
 
 .theme-list{
@@ -51,6 +64,7 @@ header{
 .theme-list li{
     margin: 0px;
     list-style: none;
+    font-size: 13px;
 }
 
 .theme-list li:hover{
@@ -59,12 +73,13 @@ header{
 
 .visual{
     width: 100%;
-    height: 840px;
-    background-image: url("img/visual.jpg");
+    height: 830px;
+    background-image: url("img/souji.jpg");
     background-size: cover;
     background-position: center;
     color:#fff;
-    padding: 120px 0;
+    padding-top: 300px;
+    padding-left: 50px;
 }
 
 .visual h1{
@@ -102,6 +117,11 @@ header{
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0,3s;
+}
+
+.service li:hover{
+    transform: translateY(-8px);
 }
 
 .service img{
@@ -112,6 +132,32 @@ header{
 
 .about-list img{
     height: 270px;    
+}
+
+.strength {
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.strength-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.strength-list li {
+  list-style: none;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.strength-list li:hover {
+  transform: translateY(-8px);
 }
 
 .voice1,
@@ -155,6 +201,7 @@ footer{
     text-align: center;
     background-image: url("img/haikei2.jpg");
     background-size: cover;
+    margin-top: 100px;
 }
 
 .sub-main{
@@ -169,7 +216,7 @@ footer{
 
 @media(max-width: 768px)  {
     .container{
-        padding: o 15px;
+        padding: 0 15px;
     }
     
     header{
@@ -201,6 +248,15 @@ footer{
     .item1,
     .item2{
         width: 100%;  
+    }
+
+    .strength-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .strength-list li {
+        width: 80%;
     }
 
     section{
